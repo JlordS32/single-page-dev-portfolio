@@ -16,6 +16,18 @@
 	letter-spacing: normal;
 }
 
+.d-flex {
+	display: flex	;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
 .btn {
 	color: white;
 	text-transform: uppercase;
@@ -25,6 +37,45 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: 26px;
-	letter-spacing: 0.127rem;
+	letter-spacing: 0.125rem;
    background-color: transparent;
+   padding: 10px;
+   border: 0;
+   border-bottom: 2px solid var(--clr-2);
+   cursor: pointer;
+   transition: 150ms ease-in;
+}
+
+.btn:hover {
+   color: var(--clr-2);
+}
+
+/* text - input */
+
+.text-input {
+	background-color: transparent;
+	border: 0;
+	text-transform: uppercase;
+	padding: 16px 24px;
+	color: var(--clr-5);
+	outline: 0;
+	border-bottom: 2px var(--clr-5) solid;
+	transition: 150ms ease-in;
+}
+
+.text-input:focus {	
+	outline: 0;
+	border-bottom: 2px var(--clr-2) solid;
+}
+
+.text-input:invalid {
+	outline: 0;
+	border-bottom: 2px var(--error) solid;
+	position: relative;
+}
+
+
+.text-input::placeholder {
+	color: var(--clr-5);
+	opacity: 0.5;
 }

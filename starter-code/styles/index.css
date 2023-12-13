@@ -6,6 +6,7 @@
 	--clr-3: hsl(0, 0%, 14%);
 	--clr-4: hsl(0, 0%, 85%);
 	--clr-5: hsl(0, 0%, 100%);
+   --error: hsl(7, 100%, 68%);
 
    --bg: var(--clr-1);
    --def-clr: var(--clr-5);
