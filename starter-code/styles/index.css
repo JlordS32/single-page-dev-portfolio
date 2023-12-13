@@ -6,28 +6,66 @@
 	--clr-3: hsl(0, 0%, 14%);
 	--clr-4: hsl(0, 0%, 85%);
 	--clr-5: hsl(0, 0%, 100%);
-   --error: hsl(7, 100%, 68%);
+	--error: hsl(7, 100%, 68%);
 
-   --bg: var(--clr-1);
-   --def-clr: var(--clr-5);
+	--bg: var(--clr-1);
+	--def-clr: var(--clr-5);
 
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 18px;
-   line-height: 28px;
+	line-height: 28px;
 }
 
 * {
-   margin: 0;
-   padding: 0;
-   font-family: inherit;
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
 }
 
-*, *::before, *::after {
-   box-sizing: border-box;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 body {
-   background-color: var(--bg);
-   color: var(--def-clr)
+	background-color: var(--bg);
+	color: var(--def-clr);
+   position: relative;
 }
 
+header {
+   background-color: transparent;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+}
+
+header, main {
+   
+   padding: 0 165px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: transparent;
+	padding: 39px 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--def-clr);
+	transition: 150ms ease-in;
+}
+
+nav .brand-logo {
+	color: var(--White, #fff);
+	font-family: Space Grotesk;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: -0.444px;
+}

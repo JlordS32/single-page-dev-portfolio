@@ -1,0 +1,32 @@
+.hero {
+	height: 100vh;
+	display: flex;
+   position: relative;
+}
+
+.hero-desc {
+	margin-top: 10rem;
+	transform: translateY(-50%);
+	padding-top: 10rem;
+	width: 44rem;
+	height: 16.83333rem;
+}
+
+.hero .img-container {
+   z-index: -1;
+   position: absolute;
+   right: 0;
+	width: 25rem;
+	height: 40rem;
+	background-image: url(../assets/images/conor.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-desc > p {
+	margin-top: 2.4rem;
+}
+
+.hero-desc > .btn {
+	margin-top: 3.7rem;
+}
